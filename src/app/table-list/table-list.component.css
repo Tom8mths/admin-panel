@@ -1,0 +1,16 @@
+.ecks:hover {
+  cursor: pointer;
+}
+
+.new-user {
+  top: 30px;
+  right: 16px;
+  position: absolute;
+  color: #ffffff;
+}
+
+.icon-newuser {
+  bottom: 3px;
+  position: absolute;
+  right: 90px;
+}

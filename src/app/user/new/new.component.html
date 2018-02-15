@@ -1,0 +1,46 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Novo Usuário</h4>
+            <p class="card-category">Cadastre um novo Usuário.</p>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput [(ngModel)]="user.name" name="name" placeholder="Nome">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email" [(ngModel)]="user.email" name="email" type="email">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Senha"  [(ngModel)]="user.password" name="password" type="password">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Confirmação de senha" [(ngModel)]="user.password_confirmation" name="password_confirmation" type="password">
+                  </mat-form-field>
+                </div>
+              </div>
+              <button mat-raised-button type="submit" (click)="newuser" class="btn btn-danger pull-right">Cadastrar</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
